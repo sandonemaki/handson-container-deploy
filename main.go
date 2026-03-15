@@ -11,7 +11,6 @@ import (
 const version = "1.0"
 
 // unusedFuncは使われていない
-// func unusedFunc() {}
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
