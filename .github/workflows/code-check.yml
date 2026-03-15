@@ -4,6 +4,9 @@ on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - feature/add-cicd-pipeline2
 
 jobs:
   go-lint:
