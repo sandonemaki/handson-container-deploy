@@ -28,3 +28,11 @@ jobs:
       # 静的解析を実行
       - name: Run golangci-lint
         run: golangci-lint run ./...
+
+        # ユニットテストを実行
+      - name: Run tests
+        run: go test -v ./...
+
+  golang-unittest:
+    name: Run golang-unittest
+    runs-on: ubuntu-latest
